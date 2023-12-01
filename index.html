@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+
+            <header>
+                <h5>Calculator</h5>
+                <div class="input">
+                    <input type="text" id="num" placeholder="0000" oninput="show()" >
+                </div>
+                <div id="display">
+                    
+                </div>
+            </header>
+            <main>
+                <button type="button" onclick="input.value = ''
+                    console.log('clicked')" type="button">AC</button>
+                <button type="button" onclick="display.innerHTML = ''; input.value = ''">CLR</button>
+                <button type="button" onclick=""></button>
+                <button type="button" onclick="div()">/</button>
+                <button type="button" onclick="input.value += 9;display.innerHTML += 9">9</button>
+                <button type="button" onclick="input.value += 8;display.innerHTML += 8">8</button>
+                <button type="button" onclick="input.value += 7;display.innerHTML += 7">7</button>
+                <button type="button" onclick="mul()">*</button>
+                <button type="button" onclick="input.value += 6;display.innerHTML += 6">6</button>
+                <button type="button" onclick="input.value += 5;display.innerHTML += 5">5</button>
+                <button type="button" onclick="input.value += 4;display.innerHTML += 4">4</button>
+                <button type="button" onclick="sub()">-</button>
+                <button type="button" onclick="input.value += 3;display.innerHTML += 3">3</button>
+                <button type="button" onclick="input.value += 2;display.innerHTML += 2">2</button>
+                <button type="button" onclick="input.value += 1;display.innerHTML += 1">1</button>
+                <button type="button" onclick="add()">+</button>
+                <button type="button" onclick="modulo()">%</button>
+                <button type="button" onclick="">.</button>
+                <button type="button" onclick="input.value += 0;display.innerHTML += 0">0</button>
+                <button type="button" onclick="">=</button>
+            </main> 
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
